@@ -1,0 +1,27 @@
+Usuario, edad, característica y motivación:
+Administrador de la app, 20s entre 50s, usuario que se dedica netamente a administrar la app, llevar buen manejo de la app
+Estudiante de macc, 20s entre 30s, usuario que se dedica administrar sus fechas de entrega de trabajos, organizar sus entregas de trabajos de la clase
+Docente de desarrollo movil, 30s entre 50s, usuario que se dedica a subir las actividades que se le son asignadas a sus estudiantes, contener los trabajos en un solo espacio visible para los estudiantes
+
+
+Definir roles de los usuarios:
+Administrador de la app: Administrar tanto como agregar o eliminar secciones, ver el buen uso de la app
+Estudiante de macc: Realizar las entregas correspondientes a los trabajos asignados en clase
+Docente de desarrollo movil: Contar con un espacio en donde pueda subir las actividades correspondientes a la clase
+
+Problemática que presentaría cada usuario:
+Administrador de la app: No poder administrar de forma correcta el mantenimiento o las secciones de la app
+Estudiante de macc: NO tener un recordatorio o no realizar entrega de sus actividades por que se la pasa ocupado en otras actividades
+Docente de desarrollo movil: No contar con una función que le permita verificar la carga de actividades por parte de los estudiantes
+
+Para cada perfil definir que necesita la app:
+Administrador: Acceder y modificar bases, estado, y funcionalidades de la app
+Estudiante: Tener notificaciones de fecha de entrega de las tareas y cargar las actividades
+Docente: Tener donde asignar sus actividades, enviar recordatorios a sus estudiantes
+
+5 requisitos funcionales con su código de prioridad, código. nombre. descripción. usuario:
+004. EstadoUsuario. Cambiar de estado a activo o inactivo de un usuario. Administrador
+001. AsignacionActividades. Sección en donde se pueda realizar la asignación de actividades. Docente
+002. CargueActividades. Sección en donde se verifica la subida/cargue de las actividades. Estudiante
+003. RecordatorioActividades. Recordatorio de las actividades próximas a vencer. Estudiante
+000. RolUsuario. Sección en donde se pueda verificar el rol del usuario. Administrador
