@@ -1,0 +1,137 @@
+De los 5 requisitos realizados el 12 feb generar las historias del usuario con nombre, código, historia(Como quiero para), escenarios, criterios de aceptación, estimación, responsable:
+
+_____________________________________________________________________________________________________________________________________________________
+
+Nombre: Verificación de Rol de Usuario
+
+Código:CG-000
+
+Historia de Usuario:
+Como administrador
+Quiero poder verificar el rol asignado a cada usuario
+Para asegurar que tenga los permisos correctos dentro del sistema
+
+Escenarios:
+Escenario 1: Consulta exitosa del rol
+Dado que el administrador está autenticado cuando accede al perfil de un usuario entonces puede visualizar el rol asignado (Administrador, Docente o Estudiante)
+Escenario 2: Usuario no encontrado
+Dado que el administrador busca un usuario inexistente cuando realiza la consulta entonces el sistema muestra un mensaje de "Usuario no encontrado"
+
+Criterios de Aceptación:
+* El sistema debe mostrar el rol actual del usuario.
+* Solo el administrador puede acceder a esta sección.
+* Debe mostrar mensaje de error si el usuario no existe.
+* La información debe actualizarse en tiempo real.
+
+Estimación de Tiempo:2
+
+Responsable: Desarrollador Backend
+
+___________________________________________________________________________________________________________________________________________________________
+
+Nombre: Asignación de actividades
+
+Código: CG-001
+
+Historia de Usuario:
+Como docente
+Quiero asignar actividades a los estudiantes
+Para que puedan desarrollarlas dentro del plazo establecido
+
+Escenarios:
+Escenario 1: Asignación correcta
+Dado que el docente crea una actividad cuando define fecha de entrega y grupo entonces la actividad queda visible para los estudiantes
+Escenario 2: Fecha inválida
+Dado que el docente ingresa una fecha anterior a la actual cuando intenta guardar entonces el sistema muestra error
+
+Criterios de Aceptación:
+* El docente puede crear, editar y eliminar actividades.
+* Debe ser obligatorio ingresar fecha de entrega.
+* Los estudiantes deben visualizar la actividad asignada.
+* El sistema valida que la fecha sea futura.
+
+Estimación de Tiempo: 5
+
+Responsable: Desarrollador Full Stack
+
+____________________________________________________________________________________________________________________________________________________________
+
+Nombre: Cargue de actividades
+
+Código:CG-002
+
+Historia de Usuario:
+Como estudiante
+Quiero subir mis actividades al sistema
+Para cumplir con los plazos establecidos por el docente
+
+Escenarios:
+Escenario 1: Subida exitosa
+Dado que el estudiante selecciona la actividad cuando carga el archivo antes de la fecha límite entonces el sistema confirma la entrega exitosa
+Escenario 2: Entrega fuera de plazo
+Dado que la fecha límite ha vencido cuando el estudiante intenta subir el archivo entonces el sistema bloquea la entrega
+
+Criterios de Aceptación:
+* El sistema debe aceptar archivos en formatos definidos (PDF, DOCX, etc.).
+* Debe mostrar confirmación de carga exitosa.
+* No permitir subida fuera de plazo.
+* Debe quedar registro de fecha y hora de entrega.
+
+Estimación de Tiempo: 6
+
+Responsable: Desarrollador Full Stack
+
+___________________________________________________________________________________________________________________________________________________________
+
+Nombre: Recordatorio de actividades próximas a vencer
+
+Código:CG-003
+
+Historia de Usuario:
+Como estudiante
+Quiero recibir recordatorios de actividades próximas a vencer
+Para no olvidar entregarlas a tiempo
+
+Escenarios:
+Escenario 1: Recordatorio automático
+Dado que una actividad vence en 24 horas cuando el sistema detecta la proximidad entonces envía notificación al estudiante
+Escenario 2: No hay actividades próximas
+Dado que no hay actividades cercanas a vencer cuando el sistema verifica entonces no envía notificaciones
+
+Criterios de Aceptación:
+
+* El sistema debe enviar recordatorio 24 horas antes del vencimiento.
+* Puede ser notificación dentro del sistema o por correo.
+* Solo se envía si la actividad no ha sido entregada.
+* Debe registrarse que el recordatorio fue enviado.
+
+Estimación de Tiempo: 4
+
+Responsable: Desarrollador Backend
+
+_______________________________________________________________________________________________________________________________________________
+
+Nombre:Cambio de estado del usuario
+
+Código:CG-004
+
+Historia de Usuario:
+Como administrador
+Quiero cambiar el estado de un usuario a activo o inactivo
+Para controlar su acceso al sistema
+
+Escenarios:
+Escenario 1: Desactivar usuario
+Dado que el administrador selecciona un usuario cuando cambia su estado a inactivo entonces el usuario no podrá iniciar sesión
+Escenario 2: Activar usuario
+Dado que el administrador selecciona un usuario inactivo cuando cambia su estado a activo entonces el usuario podrá iniciar sesión nuevamente
+
+Criterios de Aceptación:
+* Solo el administrador puede cambiar el estado.
+* El cambio debe guardarse inmediatamente en base de datos.
+* Un usuario inactivo no puede autenticarse.
+* Debe mostrarse confirmación del cambio.
+
+Estimación de Tiempo:4
+
+Responsable: Desarrollador Backend
