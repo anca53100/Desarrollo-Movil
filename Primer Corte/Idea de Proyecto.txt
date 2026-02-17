@@ -1,0 +1,4 @@
+Idea: Una app acerca de informacion de mascotas 
+• Perfil de tu mascota: ahí guardas todo lo importante, como el carnet de vacunas, desparasitación, peso y hasta poder ubicarla desde el celular. Además, que se pueda conectar con la veterinaria para que ellos también tengan la info al día.
+• Mascotas perdidas: una sección donde la gente pueda subir fotos y datos de animalitos que se encuentren en la calle. Así, si alguien perdió su mascota, puede buscar por filtros (raza, color, tamaño, etc.) y ver si aparece. La idea es que el sistema avise si el perrito ya estaba reportado antes, para actualizar la información y que sea más fácil encontrarlo.
+Adopción y donaciones: un espacio manejado por fundaciones donde se publiquen mascotas que buscan hogar. También que se puedan hacer donaciones para apoyar a las mascotas rescatados.
