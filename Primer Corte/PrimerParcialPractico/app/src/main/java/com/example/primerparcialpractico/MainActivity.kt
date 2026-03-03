@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
 
 
         enableEdgeToEdge()
-        setContent {
+        setContent {.
             PrimerParcialPracticoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
